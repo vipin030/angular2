@@ -4,21 +4,17 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `<div class="container">
     			<div class="row" id="header">
-  					<a [routerLink]="['/']">Home</a>
-	  				<a [routerLink]="['/add']">Add</a>
-	  				<a [routerLink] = "['/games']">Game</a>
+  					<a [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+	  				<a [routerLink]="['/add']" [routerLinkActive]="['active']">Add</a>
+	  				<a [routerLink] = "['/games']" [routerLinkActive]="['active']">Game</a>
 				</div>
     		<div class="outer-outlet">
       		<router-outlet></router-outlet>
     		</div>
     		</div>`,
     styles: [`
-    #header {
-      height: 40px;
-      border-bottom:1px solid #ccc;
-      margin-top:10px;
-    }
-    #header a{
+    
+    #headers a{
     text-decoration: none;
     width: 70px;
     background: #ccc;
@@ -28,4 +24,5 @@ import { Component } from '@angular/core';
     }
   `]
 })
-export class AppComponent { }
+export class AppComponent { 
+}

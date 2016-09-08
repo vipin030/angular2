@@ -1,0 +1,24 @@
+#header {
+      height: 65px;
+      border-bottom:1px solid #ccc;
+      margin-top:20px;
+    }
+#header a {
+    position: relative;
+    background-color: #78ce7f;
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+#header a:hover, #header a.active{
+    background-color: #3ba73f;
+}
+
